@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 
 const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
-  preload: true,
 });
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          inter.className,
+          inter.variable,
           "antialiased selection:bg-white selection:text-black",
         )}
       >
