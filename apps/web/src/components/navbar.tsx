@@ -19,6 +19,7 @@ const navItems = [
   { name: { es: "Sobre Nosotros", en: "About Us" }, href: "/about" },
   { name: { es: "Colectivo", en: "Collective" }, href: "/collective" },
   { name: { es: "Noticias", en: "News" }, href: "/news" },
+  { name: { es: "Medios", en: "Media" }, href: "/media" },
   { name: { es: "Contacto", en: "Contact" }, href: "/contact" },
 ];
 
