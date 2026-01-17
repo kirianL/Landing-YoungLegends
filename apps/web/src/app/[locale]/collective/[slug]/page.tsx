@@ -4,12 +4,10 @@ import { MEMBERS, ROLE_TRANSLATIONS } from "@/data/content";
 import * as motion from "framer-motion/client";
 import dynamic from "next/dynamic";
 
-const PortfolioRenderer = dynamic(
-  () =>
-    import("@/components/portfolio-renderer").then(
-      (mod) => mod.PortfolioRenderer,
-    ),
-  { ssr: false },
+const PortfolioRenderer = dynamic(() =>
+  import("@/components/portfolio-renderer").then(
+    (mod) => mod.PortfolioRenderer,
+  ),
 );
 
 export default async function MemberProfilePage({
