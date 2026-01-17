@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { OptimizedImage } from "@/components/optimized-image";
 import { notFound } from "next/navigation";
 import { MEMBERS, ROLE_TRANSLATIONS } from "@/data/content";
 import * as motion from "framer-motion/client";
@@ -64,7 +63,7 @@ export default async function MemberProfilePage({
         <section className="container mx-auto px-6 py-24 flex flex-col lg:flex-row gap-12 lg:gap-24 border-b border-white/10">
           <div className="w-full lg:w-1/3 aspect-[3/4] relative bg-muted shrink-0">
             {member.image && (
-              <OptimizedImage
+              <Image
                 src={member.image}
                 alt={member.name}
                 fill

@@ -1,5 +1,5 @@
 import { SITE_SETTINGS } from "@/data/content";
-import { OptimizedImage } from "@/components/optimized-image";
+import Image from "next/image";
 import * as motion from "framer-motion/client";
 
 export default async function AboutPage({
@@ -38,7 +38,7 @@ export default async function AboutPage({
             Desktop: Absolute full cover.
         */}
         <div className="relative w-full aspect-[4/3] md:absolute md:inset-0 md:aspect-auto z-0">
-          <OptimizedImage
+          <Image
             src="/assets/we/nosotros.jpg"
             alt="Young Legends Collective"
             fill
@@ -47,7 +47,7 @@ export default async function AboutPage({
             sizes="(max-width: 768px) 100vw, 50vw"
             quality={85}
           />
-          <OptimizedImage
+          <Image
             src="/assets/we/nosotros.jpg"
             alt="Young Legends Collective"
             fill
@@ -120,7 +120,7 @@ export default async function AboutPage({
           transition={{ duration: 1.5 }}
           className="w-full h-full relative"
         >
-          <OptimizedImage
+          <Image
             src="/assets/we/YL-Group2.jpg"
             alt="Studio Session"
             fill
@@ -237,7 +237,7 @@ export default async function AboutPage({
             {isEs ? "Esto es solo el comienzo." : "This is just the beginning."}
           </h2>
           <div className="flex justify-center">
-            <OptimizedImage
+            <Image
               src="/assets/costa-rica.png"
               alt="Costa Rica"
               width={64}

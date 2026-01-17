@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { OptimizedImage } from "./optimized-image";
+import Image from "next/image";
 import { ROLE_TRANSLATIONS } from "@/data/content";
-import { cn } from "@/lib/utils";
 
 export function MemberCard({
   member,
@@ -13,18 +12,17 @@ export function MemberCard({
   index?: number;
 }) {
   const isPriority = index < 4;
-
   return (
     <Link
       href={`/${locale}/collective/${member.slug}`}
-      className="group relative block aspect-[4/5] overflow-hidden bg-neutral-900"
+      className="group relative block aspect-[4/5] overflow-hidden bg-muted"
     >
       {member.image ? (
-        <OptimizedImage
+        <Image
           src={member.image}
           alt={member.name}
           fill
-          className="object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+          className="object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
           priority={isPriority}
           quality={75}
