@@ -160,7 +160,6 @@ export default async function NewsDetailPage({
                 <video
                   src={post.video}
                   autoPlay
-                  muted
                   loop
                   playsInline
                   className="w-full h-full object-cover"

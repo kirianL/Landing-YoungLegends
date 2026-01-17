@@ -2,6 +2,7 @@ import { PortfolioRenderer } from "@/components/portfolio-renderer";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { MEMBERS, ROLE_TRANSLATIONS } from "@/data/content";
+import * as motion from "framer-motion/client";
 
 export default async function MemberProfilePage({
   params,
@@ -46,7 +47,12 @@ export default async function MemberProfilePage({
         </div>
       </div>
 
-      <div className="relative z-10">
+      <motion.div
+        className="relative z-10"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         {/* Bio Header */}
         <section className="container mx-auto px-6 py-24 flex flex-col lg:flex-row gap-12 lg:gap-24 border-b border-white/10">
           <div className="w-full lg:w-1/3 aspect-[3/4] relative bg-muted shrink-0">
@@ -97,7 +103,7 @@ export default async function MemberProfilePage({
             locale={locale}
           />
         )}
-      </div>
+      </motion.div>
     </div>
   );
 }
