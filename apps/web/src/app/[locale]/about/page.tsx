@@ -12,8 +12,8 @@ export default async function AboutPage({
   const isEs = locale === "es";
 
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-neutral-800 selection:text-white relative">
-      <div className="fixed inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none z-50 mix-blend-overlay" />
+    <div className="min-h-screen bg-black text-white selection:bg-neutral-800 selection:text-white relative overflow-x-hidden">
+      <div className="fixed inset-0 bg-[url('/assets/noise.svg')] opacity-20 pointer-events-none z-50 mix-blend-overlay transform-gpu" />
       {/* 
         HERO SECTION: STACKED MAGAZINE LAYOUT
         Priority: Full visibility of the 'nosotros.jpg' group image.
@@ -44,7 +44,8 @@ export default async function AboutPage({
             fill
             priority
             className="md:hidden object-cover object-center"
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            quality={85}
           />
           <Image
             src="/assets/we/nosotros.jpg"
@@ -53,6 +54,7 @@ export default async function AboutPage({
             priority
             className="hidden md:block object-cover object-top opacity-60"
             sizes="100vw"
+            quality={90}
           />
 
           {/* Gradients */}
@@ -124,6 +126,7 @@ export default async function AboutPage({
             fill
             className="object-cover"
             sizes="100vw"
+            quality={85}
           />
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
         </motion.div>

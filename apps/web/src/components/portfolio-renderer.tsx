@@ -1,8 +1,11 @@
-"use client";
-
-import MuxPlayer from "@mux/mux-player-react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { motion } from "framer-motion";
+
+const MuxPlayer = dynamic(() => import("@mux/mux-player-react"), {
+  ssr: false,
+  loading: () => <div className="w-full h-full bg-neutral-900 animate-pulse" />,
+});
 
 export function PortfolioRenderer({
   sections,

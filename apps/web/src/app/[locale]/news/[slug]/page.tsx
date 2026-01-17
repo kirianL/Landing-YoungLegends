@@ -81,6 +81,7 @@ export default async function NewsDetailPage({
                 className="object-cover"
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={85}
               />
             )}
             {isEvent && (
@@ -162,6 +163,8 @@ export default async function NewsDetailPage({
                   autoPlay
                   loop
                   playsInline
+                  preload="metadata"
+                  poster={post.image || ""}
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -1,8 +1,16 @@
-import { PortfolioRenderer } from "@/components/portfolio-renderer";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { MEMBERS, ROLE_TRANSLATIONS } from "@/data/content";
 import * as motion from "framer-motion/client";
+import dynamic from "next/dynamic";
+
+const PortfolioRenderer = dynamic(
+  () =>
+    import("@/components/portfolio-renderer").then(
+      (mod) => mod.PortfolioRenderer,
+    ),
+  { ssr: false },
+);
 
 export default async function MemberProfilePage({
   params,
@@ -62,9 +70,9 @@ export default async function MemberProfilePage({
                 alt={member.name}
                 fill
                 className="object-cover grayscale"
-                sizes="(max-width: 1024px) 100vw, 33vw"
+                sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 33vw, 400px"
                 priority
-                quality={90}
+                quality={85}
               />
             )}
           </div>
