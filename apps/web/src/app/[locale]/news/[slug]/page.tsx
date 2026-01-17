@@ -1,5 +1,5 @@
 import { NEWS } from "@/data/content";
-import Image from "next/image";
+import { OptimizedImage } from "@/components/optimized-image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { formatDate } from "@/lib/utils";
@@ -74,7 +74,7 @@ export default async function NewsDetailPage({
           {/* Cover Image */}
           <div className="relative aspect-[3/4] lg:aspect-[3/4] overflow-hidden bg-muted">
             {post.image && (
-              <Image
+              <OptimizedImage
                 src={post.image}
                 alt={post.title?.[currentLocale] || ""}
                 fill
