@@ -3,7 +3,6 @@
 import React from "react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { ScrollRestoration } from "@/components/scroll-restoration";
 
 export default function LocaleLayoutClient({
   children,
@@ -14,7 +13,6 @@ export default function LocaleLayoutClient({
 }) {
   return (
     <>
-      <ScrollRestoration />
       <div className="noise-overlay" />
       <Navbar locale={locale} />
       <main className="min-h-screen">{children}</main>
