@@ -39,7 +39,7 @@ export default async function AboutPage({
         */}
         <div className="relative w-full aspect-[4/3] md:absolute md:inset-0 md:aspect-auto z-0">
           <Image
-            src="/assets/we/nosotros.jpg"
+            src="/assets/we/nosotros.webp"
             alt="Young Legends Collective"
             fill
             priority
@@ -48,7 +48,7 @@ export default async function AboutPage({
             quality={85}
           />
           <Image
-            src="/assets/we/nosotros.jpg"
+            src="/assets/we/nosotros.webp"
             alt="Young Legends Collective"
             fill
             priority
@@ -121,7 +121,7 @@ export default async function AboutPage({
           className="w-full h-full relative"
         >
           <Image
-            src="/assets/we/YL-Group2.jpg"
+            src="/assets/we/YL-Group2.webp"
             alt="Studio Session"
             fill
             className="object-cover"

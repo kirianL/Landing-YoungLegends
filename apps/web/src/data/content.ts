@@ -104,7 +104,7 @@ export const MEMBERS = [
     slug: "pwatersounds",
     roles: ["producer"],
     themeColor: "#00fff2", // Cyan/Teal
-    image: "/assets/members/PwaterSounds/PwaterSounds1.jpg",
+    image: "/assets/members/PwaterSounds/PwaterSounds1.webp",
     bio: {
       es: "PWaterSounds es un productor musical costarricense. Su sonido fusiona lo clásico del HipHop con texturas modernas que exploran el Rap y el Trap, generando una identidad sonora versátil y reconocible. Su recorrido en la música nace desde la curiosidad y el deseo de crear desde cero, encontrando en la producción un lenguaje propio. A lo largo de su trayectoria ha trabajado con múltiples artistas emergentes y consolidados, destacando por su oído detallado, su enfoque emocional y su compromiso con el crecimiento colectivo. Su trabajo no solo construye beats, sino atmósferas que elevan cada proyecto al siguiente nivel.",
       en: "PWaterSounds is a Costa Rican music producer. His sound fuses classic HipHop with modern textures that explore Rap and Trap, creating a versatile and recognizable sonic identity. His journey in music stems from curiosity and the desire to create from scratch, finding in production a language of his own. Throughout his career he has worked with multiple emerging and established artists, standing out for his detailed ear, his emotional focus and his commitment to collective growth. His work doesn't just build beats, but atmospheres that elevate each project to the next level.",
@@ -279,7 +279,7 @@ export const NEWS = [
       es: "En Young Legends siempre hemos creído que la unión hace la fuerza. Por eso nos complace presentarles a nuestros nuevos fichajes de este 2026. Dos promesas de la música costarricense que con su estilo único han logrado romper puertas y vienen con todas las ganas de seguir creciendo. @4bes4vvvv @jeybil.wtfff gracias por sumarse a la familia, vamos por todo. YL4L!",
       en: "At Young Legends, we have always believed that unity is strength. That's why we are pleased to introduce our new signings for 2026. Two promises of Costa Rican music who, with their unique style, have managed to break down doors and come with all the desire to keep growing. @4bes4vvvv @jeybil.wtfff thank you for joining the family, let's go for it all. YL4L!",
     },
-    image: "/assets/News - Events/4bes-Jeybil.jpeg",
+    image: "/assets/News - Events/placeholder.webp",
     video: "/assets/News - Events/4bes-Jeybil.mp4",
   },
   {
@@ -292,7 +292,7 @@ export const NEWS = [
       es: "Presentado por YL en colaboración con Old Fresco el pasado 7 de junio en el edificio patrimonial La Alhambra.",
       en: "Presented by YL in collaboration with Old Fresco this past June 7th at the heritage building La Alhambra.",
     },
-    image: "/assets/News - Events/LegendsSocialClub.jpeg",
+    image: "/assets/News - Events/placeholder.webp",
     location: {
       es: "Edificio patrimonial La Alhambra",
       en: "La Alhambra Heritage Building",

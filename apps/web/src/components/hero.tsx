@@ -52,7 +52,7 @@ export function Hero({ title, tagline, ctaText, locale }: HeroProps) {
           className="w-full h-full"
         >
           <Image
-            src="/assets/hero/HeroYL.jpg"
+            src="/assets/hero/HeroYL.webp"
             alt="Young Legends"
             fill
             className="object-cover opacity-60"
@@ -101,7 +101,7 @@ export function Hero({ title, tagline, ctaText, locale }: HeroProps) {
         >
           <div className="w-full h-full relative group-hover:animate-glitch">
             <Image
-              src="/assets/hero/KbraYL.png"
+              src="/assets/hero/KbraYL.webp"
               alt="Kbra"
               fill
               className="object-contain"
