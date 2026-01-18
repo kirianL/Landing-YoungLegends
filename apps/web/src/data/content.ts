@@ -279,7 +279,7 @@ export const NEWS = [
       es: "En Young Legends siempre hemos creído que la unión hace la fuerza. Por eso nos complace presentarles a nuestros nuevos fichajes de este 2026. Dos promesas de la música costarricense que con su estilo único han logrado romper puertas y vienen con todas las ganas de seguir creciendo. @4bes4vvvv @jeybil.wtfff gracias por sumarse a la familia, vamos por todo. YL4L!",
       en: "At Young Legends, we have always believed that unity is strength. That's why we are pleased to introduce our new signings for 2026. Two promises of Costa Rican music who, with their unique style, have managed to break down doors and come with all the desire to keep growing. @4bes4vvvv @jeybil.wtfff thank you for joining the family, let's go for it all. YL4L!",
     },
-    image: "/assets/News - Events/placeholder.webp",
+    image: "/assets/News - Events/4bes-Jeybil.webp",
     video: "/assets/News - Events/4bes-Jeybil.mp4",
   },
   {
@@ -292,7 +292,7 @@ export const NEWS = [
       es: "Presentado por YL en colaboración con Old Fresco el pasado 7 de junio en el edificio patrimonial La Alhambra.",
       en: "Presented by YL in collaboration with Old Fresco this past June 7th at the heritage building La Alhambra.",
     },
-    image: "/assets/News - Events/placeholder.webp",
+    image: "/assets/News - Events/LegendsSocialClub.webp",
     location: {
       es: "Edificio patrimonial La Alhambra",
       en: "La Alhambra Heritage Building",
