@@ -10,6 +10,7 @@ export function NewsCard({ post, locale }: { post: any; locale: string }) {
   return (
     <Link
       href={`/${locale}/news/${post.slug}`}
+      prefetch={true}
       className="flex flex-col group relative overflow-hidden bg-muted aspect-[3/4]"
     >
       <div className="absolute inset-0 z-0">

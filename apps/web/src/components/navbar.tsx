@@ -64,6 +64,7 @@ export function Navbar({ locale }: { locale: string }) {
             <Link
               key={item.href}
               href={`/${locale}${item.href}`}
+              prefetch={true}
               className={cn(
                 "text-sm uppercase tracking-widest hover:text-white transition-colors",
                 pathname.includes(item.href) && item.href !== "/"
@@ -112,6 +113,7 @@ export function Navbar({ locale }: { locale: string }) {
                   <Link
                     key={item.href}
                     href={`/${locale}${item.href}`}
+                    prefetch={true}
                     onClick={() => setOpen(false)}
                     className="text-2xl font-black uppercase tracking-tighter hover:text-primary transition-colors"
                   >

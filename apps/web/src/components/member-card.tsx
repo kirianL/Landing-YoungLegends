@@ -15,6 +15,7 @@ export function MemberCard({
   return (
     <Link
       href={`/${locale}/collective/${member.slug}`}
+      prefetch={true}
       className="group relative block aspect-[4/5] overflow-hidden bg-muted"
     >
       {member.image ? (
